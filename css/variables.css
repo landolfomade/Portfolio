@@ -1,0 +1,16 @@
+/*Aqui meto las propiedades del portfolio.
+
+Usé claude para afinar una buena paleta de colores, ya que en mis 
+proyectos anteriores las paletas eran muy monótonas */
+
+:root {
+  --color-fondo: #f5f50eb;
+  --color-fondo-alt: #ede6de;
+  --color-terracotta: #b5613a;
+  --color-terracotta-oscuro: #854a28;
+  --color-terracotta-claro: #d4845e;
+  --color-texto: #2c2420;
+  --color-texto-suave: #6b5a52;
+  --color-blanco: #faf7f4;
+  --color-borde: #d9cfc7;
+}
