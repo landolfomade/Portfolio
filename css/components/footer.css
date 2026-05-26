@@ -1,0 +1,58 @@
+/* footer.css */
+
+.footer {
+  background-color: var(--color-texto);
+  color: var(--color-fondo);
+  padding: var(--espacio-xl) var(--espacio-lg);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--espacio-lg);
+  flex-wrap: wrap;
+}
+
+.footer-nombre {
+  font-family: var(--fuente-titulo);
+  font-size: var(--texto-2xl);
+  font-weight: 600;
+  margin-bottom: var(--espacio-xs);
+}
+
+.footer-tagline {
+  font-size: var(--texto-sm);
+  color: rgba(245, 240, 235, 0.5);
+}
+
+.footer-enlaces {
+  display: flex;
+  gap: var(--espacio-md);
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.footer-enlaces a {
+  font-size: var(--texto-sm);
+  color: rgba(245, 240, 235, 0.6);
+  transition: color var(--transicion);
+  letter-spacing: 0.04em;
+}
+
+.footer-enlaces a:hover {
+  color: var(--color-terracotta-claro);
+}
+
+.footer-copy {
+  font-size: var(--texto-xs);
+  color: rgba(245, 240, 235, 0.35);
+  margin-top: var(--espacio-lg);
+  padding-top: var(--espacio-md);
+  border-top: 1px solid rgba(245, 240, 235, 0.1);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
