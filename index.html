@@ -110,3 +110,44 @@
     </div>
   </div>
 </section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="seccion animar-scroll" id="contacto">
+  <h2 class="seccion-titulo">Contacto</h2>
+  <div class="contacto-contenido">
+    <p class="contacto-intro">
+      ¿Tienes un proyecto en mente o quieres hablar de diseño? Escríbeme.
+    </p>
+
+    <!-- Formulario con validación JS -->
+    <form class="formulario" id="formulario-contacto" novalidate>
+      <div class="form-grupo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+        <span class="form-error" id="error-nombre"></span>
+      </div>
+      <div class="form-grupo">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="tu@email.com"
+        />
+        <span class="form-error" id="error-email"></span>
+      </div>
+      <div class="form-grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          placeholder="Cuéntame en qué puedo ayudarte"
+        ></textarea>
+        <span class="form-error" id="error-mensaje"></span>
+      </div>
+      <button type="submit" class="form-boton">Enviar mensaje</button>
+      <p class="form-exito" id="form-exito"></p>
+    </form>
+  </div>
+</section>
