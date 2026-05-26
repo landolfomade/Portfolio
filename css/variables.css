@@ -14,3 +14,35 @@ proyectos anteriores las paletas eran muy monótonas */
   --color-blanco: #faf7f4;
   --color-borde: #d9cfc7;
 }
+
+  /* Tipografía */
+  --fuente-principal: 'Inter', sans-serif;
+  --fuente-titulo: 'Playfair Display', serif;
+
+  /* Tamaños (Me ayudé de Claude para crear los distintos tamaños de texto y espaciados de la manera más eficiente posible y para darle un look más profesional a mi página web y poder controlar los tamaños de los textos y líneas de la manera más fácil posible. */
+  --texto-xs: 0.75rem;
+  --texto-sm: 0.875rem;
+  --texto-base: 1rem;
+  --texto-lg: 1.125rem;
+  --texto-xl: 1.25rem;
+  --texto-2xl: 1.5rem;
+  --texto-3xl: 2rem;
+  --texto-4xl: 2.75rem;
+  --texto-5xl: 3.5rem;
+
+  /* Espaciado */
+  --espacio-xs: 0.5rem;
+  --espacio-sm: 1rem;
+  --espacio-md: 1.5rem;
+  --espacio-lg: 2.5rem;
+  --espacio-xl: 4rem;
+  --espacio-2xl: 6rem;
+
+  /* Efectos*/
+  --radio-sm: 4px;
+  --radio-md: 8px;
+  --radio-lg: 16px;
+  --sombra: 0 2px 12px rgba(44, 36, 32, 0.08);
+  --sombra-hover: 0 6px 24px rgba(44, 36, 32, 0.15);
+  --transicion: 0.3s ease;
+}
