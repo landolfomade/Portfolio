@@ -1,6 +1,7 @@
 /* hero.css */
 
-.hero { //me ayudé de Claude para encontrar el mejor posicionamiento del hero.
+.hero {
+  /*me ayudé de Claude para encontrar el mejor posicionamiento del hero*/
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -9,6 +10,7 @@
   padding-bottom: 120px;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 /* Imagen ocupa todo el fondo */
@@ -28,7 +30,7 @@
   object-position: center bottom;
 }
 
-/* Capa oscura encima de la imagen para que el texto sea legible */
+/* Puse una capa oscura encima de la imagen para que el texto sea legible */
 .hero-imagen::after {
   content: "";
   position: absolute;

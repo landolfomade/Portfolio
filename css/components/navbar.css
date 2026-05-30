@@ -17,7 +17,6 @@
     border-color var(--transicion),
     box-shadow var(--transicion);
 }
-
 /* Esta clase la añade JS cuando se hace scroll */
 .navbar.scrolled {
   border-color: var(--color-borde);
@@ -33,9 +32,17 @@
 }
 
 .navbar-links {
-  display: flex;
-  gap: var(--espacio-lg);
-  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--color-fondo);
+  padding: var(--espacio-md) var(--espacio-lg);
+  border-bottom: 1px solid var(--color-borde);
+  gap: var(--espacio-md);
+  z-index: 100;
 }
 
 .navbar-links a {
