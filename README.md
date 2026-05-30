@@ -84,5 +84,4 @@ El código fue revisado, adaptado y completado por mí. Todo el contenido
 
 ## Captura de pantalla
 
-//ME FALTA AÑADIR LA CAPTURA DE PANTALLA
-![Captura del portfolio](img/screenshot.png)
+![Captura del portfolio](img/Portfolio%20Página%20Principal.png)
