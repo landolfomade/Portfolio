@@ -17,7 +17,7 @@
     border-color var(--transicion),
     box-shadow var(--transicion);
 }
-/* Esta clase la añade JS cuando se hace scroll */
+
 .navbar.scrolled {
   border-color: var(--color-borde);
   box-shadow: var(--sombra);
@@ -31,18 +31,12 @@
   letter-spacing: 0.02em;
 }
 
+/* En escritorio los enlaces se ven siempre en fila */
 .navbar-links {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  flex-direction: column;
-  background-color: var(--color-fondo);
-  padding: var(--espacio-md) var(--espacio-lg);
-  border-bottom: 1px solid var(--color-borde);
-  gap: var(--espacio-md);
-  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  gap: var(--espacio-lg);
+  list-style: none;
 }
 
 .navbar-links a {
@@ -57,7 +51,7 @@
   color: var(--color-terracotta);
 }
 
-/* Menú móvil */
+/* El botón hamburguesa solo se ve en móvil */
 .navbar-toggle {
   display: none;
   background: none;
@@ -78,6 +72,7 @@
     opacity var(--transicion);
 }
 
+/* En móvil el menú se oculta y el botón aparece */
 @media (max-width: 640px) {
   .navbar-toggle {
     display: flex;
@@ -90,10 +85,11 @@
     left: 0;
     width: 100%;
     flex-direction: column;
-    background-color: var(--color-fondo);
+    background-color: var(--color-blanco);
     padding: var(--espacio-md) var(--espacio-lg);
     border-bottom: 1px solid var(--color-borde);
     gap: var(--espacio-md);
+    z-index: 100;
   }
 
   .navbar-links.abierto {
