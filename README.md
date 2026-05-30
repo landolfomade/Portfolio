@@ -2,7 +2,7 @@
 
 Portfolio personal de diseño publicado en GitHub Pages.
 
-**URL en vivo:** https://tuusuario.github.io/mi-portfolio/
+**URL en vivo:** https://landolfomade.github.io/Portfolio/
 
 ---
 
