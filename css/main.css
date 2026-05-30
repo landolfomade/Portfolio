@@ -225,3 +225,17 @@ a {
     padding: var(--espacio-xl) var(--espacio-sm);
   }
 }
+
+/* Animación de entrada al cargar la página */
+.fade-entrada {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.fade-entrada.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

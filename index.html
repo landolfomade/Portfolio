@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Natalia García Portfolio Diseño</title>
+    <title>Natalia García — Portfolio Diseño</title>
     <meta
       name="description"
-      content=" Natalia García diseñadora gráfica y de comunicación visual."
+      content="Portfolio de Natalia García, diseñadora gráfica y de comunicación visual."
     />
 
-    <meta property="og:title" content="Tu Nombre — Portfolio" />
+    <!-- SEO y Open Graph -->
+    <meta property="og:title" content="Natalia García — Portfolio" />
     <meta
       property="og:description"
       content="Diseño gráfico, identidad visual y proyectos editoriales."
@@ -21,152 +22,171 @@
       content="https://tuusuario.github.io/mi-portfolio/"
     />
 
-    <!--link de css -->
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23b5613a'/></svg>"
+    />
+
+    <!-- Un solo link CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-</html>
 
-<body>
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <span class="navbar-logo">Natalia García</span>
-    <button class="navbar-toggle" id="navbar-toggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="navbar-links" id="navbar-links">
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="inicio">
-    <div class="hero-contenido">
-      <span class="hero-subtitulo">Portfolio · Diseño</span>
-      <span class="hero-linea"></span>
-      <h1 class="hero-titulo">
-        Hola, soy<br />
-        <em>Natalia</em>
-      </h1>
-      <p class="hero-descripcion">
-        Diseñadora gráfica especializada en identidad visual, packaging y
-        proyectos editoriales. Estudiante en Universidad Europea de Madrid.
-      </p>
-      <a href="#proyectos" class="hero-cta">Ver proyectos</a>
-    </div>
-  </section>
-</body>
-
-<!-- ===== PROYECTOS ===== -->
-<section class="seccion-proyectos animar-scroll" id="proyectos">
-  <div class="proyectos-inner">
-    <h2 class="seccion-titulo">Proyectos</h2>
-
-    <div class="filtros">
-      <button class="filtro activo" data-filtro="todos">Todos</button>
-      <button class="filtro" data-filtro="identidad-gráfica">
-        Identidad Gráfica
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <span class="navbar-logo">Natalia García</span>
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <button class="filtro" data-filtro="productos-e-interiores">
-        Productos e Interiores
-      </button>
-      <button class="filtro" data-filtro="experimentación">
-        Experimentación
-      </button>
-      <button class="filtro" data-filtro="web">Web</button>
-    </div>
-
-    <div class="galeria" id="galeria"></div>
-  </div>
-</section>
-
-<!-- ===== SOBRE MÍ ===== -->
-<section class="seccion animar-scroll" id="sobre-mi">
-  <h2 class="seccion-titulo">Sobre mí</h2>
-  <div class="sobre-mi-grid">
-    <div class="sobre-mi-texto">
-      <p>
-        Soy estudiante de tercero de Diseño. Me interesa el diseño de sistemas
-        de identidad, la tipografía y los proyectos donde la forma y el
-        contenido se construyen juntos.
-      </p>
-      <p>
-        Trabajo principalmente con Adobe Illustrator, InDesign, Photoshop, y
-        Figma, pero también domino recursos de modelación y planimetría como
-        Rhino 3D y AutoCAD.
-      </p>
-    </div>
-    <div class="sobre-mi-skills">
-      <h3>Disciplinas</h3>
-      <ul>
-        <li>Diseño Gráfico</li>
-        <li>Diseño de Producto</li>
-        <li>Diseño de Interiores</li>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
-    </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+   <section class="hero" id="inicio">
+
+  <!-- Imagen de fondo del hero -->
+  <div class="hero-imagen">
+    <img src="img/fotonatalia.jpg" alt="Natalia García">
   </div>
+
+  <div class="hero-contenido">
+    <span class="hero-subtitulo fade-entrada">Portfolio · Diseño</span>
+    <span class="hero-linea fade-entrada"></span>
+    <h1 class="hero-titulo fade-entrada">
+      Hola, soy<br>
+      <em>Natalia</em>
+    </h1>
+    <p class="hero-descripcion fade-entrada">
+      Diseñadora especializada en identidad visual, producto
+      e interiores. Estudiante en Universidad Europea de Madrid.
+    </p>
+    <a href="#proyectos" class="hero-cta fade-entrada">Ver proyectos</a>
+  </div>
+
 </section>
 
-<!-- ===== CONTACTO ===== -->
-<section class="seccion animar-scroll" id="contacto">
-  <h2 class="seccion-titulo">Contacto</h2>
-  <div class="contacto-contenido">
-    <p class="contacto-intro">
-      ¿Tienes un proyecto en mente o quieres hablar de diseño? Escríbeme.
-    </p>
+    <!-- ===== PROYECTOS ===== -->
+    <section class="seccion-proyectos animar-scroll" id="proyectos">
+      <div class="proyectos-inner">
+        <h2 class="seccion-titulo">Proyectos</h2>
 
-    <!-- Formulario con validación JS -->
-    <form class="formulario" id="formulario-contacto" novalidate>
-      <div class="form-grupo">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
-        <span class="form-error" id="error-nombre"></span>
+        <!-- Los data-filtro tienen que coincidir EXACTAMENTE
+           con el campo categoria de proyectos.js -->
+        <div class="filtros">
+          <button class="filtro activo" data-filtro="todos">Todos</button>
+          <button class="filtro" data-filtro="Gráfico">Gráfico</button>
+          <button class="filtro" data-filtro="Producto">Producto</button>
+          <button class="filtro" data-filtro="Interiores">Interiores</button>
+          <button class="filtro" data-filtro="Experimentación">
+            Experimentación
+          </button>
+        </div>
+
+        <!-- Vacío: JavaScript lo rellena desde proyectos.js -->
+        <div class="galeria" id="galeria"></div>
       </div>
-      <div class="form-grupo">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="tu@email.com"
-        />
-        <span class="form-error" id="error-email"></span>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="seccion animar-scroll" id="sobre-mi">
+      <h2 class="seccion-titulo">Sobre mí</h2>
+      <div class="sobre-mi-grid">
+        <div class="sobre-mi-texto">
+          <p>
+            Soy estudiante de tercero de Diseño. Me interesa el diseño de
+            sistemas de identidad, la tipografía y los proyectos donde la forma
+            y el contenido se construyen juntos.
+          </p>
+          <p>
+            Trabajo con Adobe Illustrator, InDesign, Photoshop y Figma, y domino
+            herramientas de modelación y planimetría como Rhino 3D y AutoCAD.
+          </p>
+        </div>
+        <div class="sobre-mi-skills">
+          <h3>Disciplinas</h3>
+          <ul>
+            <li>Diseño Gráfico</li>
+            <li>Diseño de Producto</li>
+            <li>Diseño de Interiores</li>
+            <li>Experimentación</li>
+          </ul>
+        </div>
       </div>
-      <div class="form-grupo">
-        <label for="mensaje">Mensaje</label>
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          rows="5"
-          placeholder="Cuéntame en qué puedo ayudarte"
-        ></textarea>
-        <span class="form-error" id="error-mensaje"></span>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="seccion animar-scroll" id="contacto">
+      <h2 class="seccion-titulo">Contacto</h2>
+      <div class="contacto-contenido">
+        <p class="contacto-intro">
+          ¿Tienes un proyecto en mente o quieres hablar de diseño? Escríbeme.
+        </p>
+        <form class="formulario" id="formulario-contacto" novalidate>
+          <div class="form-grupo">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+            />
+            <span class="form-error" id="error-nombre"></span>
+          </div>
+          <div class="form-grupo">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+            />
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-grupo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Cuéntame en qué puedo ayudarte"
+            ></textarea>
+            <span class="form-error" id="error-mensaje"></span>
+          </div>
+          <button type="submit" class="form-boton">Enviar mensaje</button>
+          <p class="form-exito" id="form-exito"></p>
+        </form>
       </div>
-      <button type="submit" class="form-boton">Enviar mensaje</button>
-      <p class="form-exito" id="form-exito"></p>
-    </form>
-  </div>
-</section>
+    </section>
 
-<!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div>
-        <p class="footer-nombre">Natalia García</p>
-        <p class="footer-tagline">Diseño · Madrid</p>
-    <p class="footer-copy">
-       ©2025 Natalia García Landolfo
-    </p>
-  </footer>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-nombre">Natalia García</p>
+          <p class="footer-tagline">Diseño · Madrid</p>
+        </div>
+        <ul class="footer-enlaces">
+          </li>
+          <li>
+            <a href="https://www.instagram.com/landolfomade" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li><a href="mailto:ngarcialandolfo@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© 2025 Natalia García Landolfo</p>
+    </footer>
 
-  <script src="js/proyectos.js" defer></script>
-  <script src="js/main.js" defer></script>
-
-</body>
+    <!-- Scripts al final, proyectos.js primero -->
+    <script src="js/proyectos.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
-
-
-
