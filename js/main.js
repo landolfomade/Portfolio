@@ -24,7 +24,7 @@ function renderizarProyectos(lista) {
 }
 
 // ─────────────────────────────────────────
-// 2. FILTROS
+// FILTROS
 // ─────────────────────────────────────────
 
 function inicializarFiltros() {
@@ -52,7 +52,7 @@ function inicializarFiltros() {
 }
 
 // ─────────────────────────────────────────
-// 3. ANIMACIÓN AL SCROLL
+// ANIMACIÓN AL SCROLL
 // ─────────────────────────────────────────
 
 function inicializarAnimacionScroll() {
@@ -73,7 +73,7 @@ function inicializarAnimacionScroll() {
 }
 
 // ─────────────────────────────────────────
-// 4. NAVBAR con scroll
+// NAVBAR con scroll
 // ─────────────────────────────────────────
 
 function inicializarNavbar() {
@@ -89,7 +89,7 @@ function inicializarNavbar() {
 }
 
 // ─────────────────────────────────────────
-// 5. FORMULARIO
+// FORMULARIO
 // ─────────────────────────────────────────
 
 function inicializarFormulario() {
@@ -140,8 +140,8 @@ function inicializarFormulario() {
 }
 
 // ─────────────────────────────────────────
-// 6. ANIMACIÓN DE ENTRADA AL CARGAR LA PÁGINA
-// Los elementos del hero aparecen uno a uno
+// ANIMACIÓN DE ENTRADA AL CARGAR LA PÁGINA
+// Hice esto para que los elementos del hero aparecen uno a uno
 // con un pequeño retraso entre cada uno
 // ─────────────────────────────────────────
 

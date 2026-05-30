@@ -2,7 +2,10 @@
    Estilos específicos de las páginas de detalle de proyecto.
    Se importa solo en esas páginas, no en index.html */
 
-/* Cabecera */
+/* ─────────────────────────────────────────
+   CABECERA
+───────────────────────────────────────── */
+
 .proyecto-hero {
   padding-top: 120px;
   padding-bottom: var(--espacio-xl);
@@ -45,20 +48,35 @@
   line-height: 1.7;
 }
 
-/* Imagen principal */
+/* ─────────────────────────────────────────
+   IMAGEN PRINCIPAL
+   Centrada, con margen lateral y sombra
+───────────────────────────────────────── */
+
 .proyecto-imagen-principal {
-  width: 100%;
-  max-height: 560px;
-  overflow: hidden;
+  max-width: 900px;
+  margin: var(--espacio-xl) auto;
+  padding: 0 var(--espacio-lg);
 }
 
 .proyecto-imagen-principal img {
   width: 100%;
-  height: 100%;
+  height: 420px;
   object-fit: cover;
+  object-position: center;
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-hover);
 }
 
-/* Contenido */
+/* Solo para las imágenes que necesitan mostrar la parte de abajo */
+.proyecto-imagen-principal img.imagen-abajo {
+  object-position: center 75%;
+}
+
+/* ─────────────────────────────────────────
+   CONTENIDO
+───────────────────────────────────────── */
+
 .proyecto-contenido {
   max-width: 800px;
   margin: 0 auto;
@@ -68,7 +86,10 @@
   gap: var(--espacio-2xl);
 }
 
-/* Bloques del caso de estudio */
+/* ─────────────────────────────────────────
+   BLOQUES DEL CASO DE ESTUDIO
+───────────────────────────────────────── */
+
 .caso-bloque {
   display: flex;
   flex-direction: column;
@@ -90,7 +111,10 @@
   line-height: 1.8;
 }
 
-/* Imágenes de proceso */
+/* ─────────────────────────────────────────
+   IMÁGENES DE PROCESO Y RESULTADO
+───────────────────────────────────────── */
+
 .caso-imagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -100,11 +124,15 @@
 .caso-imagenes img {
   width: 100%;
   border-radius: var(--radio-md);
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--color-borde);
 }
 
-/* Ficha técnica */
+/* ─────────────────────────────────────────
+   FICHA TÉCNICA
+───────────────────────────────────────── */
+
 .ficha {
   display: flex;
   flex-direction: column;
@@ -137,7 +165,10 @@
   color: var(--color-texto-suave);
 }
 
-/* Navegación entre proyectos */
+/* ─────────────────────────────────────────
+   NAVEGACIÓN ENTRE PROYECTOS
+───────────────────────────────────────── */
+
 .proyecto-nav {
   display: flex;
   justify-content: space-between;
@@ -158,8 +189,20 @@
   color: var(--color-terracotta);
 }
 
-/* Responsive */
+/* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+
 @media (max-width: 640px) {
+  .proyecto-imagen-principal {
+    padding: 0 var(--espacio-sm);
+    margin: var(--espacio-lg) auto;
+  }
+
+  .proyecto-imagen-principal img {
+    height: 260px;
+  }
+
   .caso-imagenes {
     grid-template-columns: 1fr;
   }

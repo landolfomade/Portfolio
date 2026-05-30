@@ -8,13 +8,14 @@ const proyectos = [
   {
     titulo: "Abril is Lost",
     categoria: "Producto",
-    descripcion: "Juego de mesa para personas con dificultad al comunicarse.",
+    descripcion:
+      "Juego de mesa para personas con dificultad al comunicarse verbalmente",
     imagen: "img/abrilislost1.jpg",
     slug: "proyecto-abrilislost",
   },
   {
     // slug: texto corto y sin espacios que se usa para crear URLs limpias y fáciles de leer.
-    // Ejemplo: "Abril is Lost" → "abril-is-lost".
+    // Ejemplo: "Abril is Lost" a "abril-is-lost".
     // Esto fue sugerido por la IA para ayudarme a organizar las categorías de la manera más simple posible.
 
     titulo: "Madrid es Jazz",
@@ -38,12 +39,13 @@ const proyectos = [
     descripcion:
       "Diseño tipográfico basado en formas marítimas convertido a una marca de trajes de baño para niños",
     imagen: "img/pond1.jpg",
-    slug: "proyecto-arco",
+    slug: "proyecto-pond",
   },
   {
     titulo: "El Principito",
     categoria: "Experimentación",
-    descripcion: "Descripción breve del proyecto El Principito.",
+    descripcion:
+      "Maquetación de la novela El Principito con tipografía personalizada sobre tela",
     imagen: "img/elprincipito1.jpg",
     slug: "proyecto-elprincipio",
   },
