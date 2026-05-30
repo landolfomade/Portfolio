@@ -140,6 +140,25 @@ function inicializarFormulario() {
 }
 
 // ─────────────────────────────────────────
+// 6. ANIMACIÓN DE ENTRADA AL CARGAR LA PÁGINA
+// Los elementos del hero aparecen uno a uno
+// con un pequeño retraso entre cada uno
+// ─────────────────────────────────────────
+
+function inicializarEntrada() {
+  const elementos = document.querySelectorAll(".fade-entrada");
+
+  elementos.forEach(function (elemento, indice) {
+    setTimeout(
+      function () {
+        elemento.classList.add("visible");
+      },
+      200 + indice * 150,
+    );
+  });
+}
+
+// ─────────────────────────────────────────
 // ARRANQUE
 // ─────────────────────────────────────────
 
@@ -148,3 +167,4 @@ inicializarFiltros();
 inicializarAnimacionScroll();
 inicializarNavbar();
 inicializarFormulario();
+inicializarEntrada();
