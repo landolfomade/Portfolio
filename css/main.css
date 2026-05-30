@@ -1,5 +1,5 @@
 /* main.css
-   Archivo principal. Importa todos los demás con @import.
+   Mi archivo principal. Importa todos los demás con @import.
    Solo hay un <link> en el HTML, que apunta aquí. */
 
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap");

@@ -175,7 +175,6 @@ function inicializarEntrada() {
 // ─────────────────────────────────────────
 // ARRANQUE
 // ─────────────────────────────────────────
-
 renderizarProyectos(proyectos);
 inicializarFiltros();
 inicializarAnimacionScroll();
