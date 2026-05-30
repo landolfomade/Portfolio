@@ -78,6 +78,8 @@ function inicializarAnimacionScroll() {
 
 function inicializarNavbar() {
   const navbar = document.querySelector("#navbar");
+  const toggle = document.querySelector("#navbar-toggle");
+  const links = document.querySelector("#navbar-links");
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
@@ -85,6 +87,18 @@ function inicializarNavbar() {
     } else {
       navbar.classList.remove("scrolled");
     }
+  });
+
+  // Menú móvil — abre y cierra al pulsar el botón
+  toggle.addEventListener("click", function () {
+    links.classList.toggle("abierto");
+  });
+
+  // Cierra el menú al pulsar un enlace
+  links.querySelectorAll("a").forEach(function (enlace) {
+    enlace.addEventListener("click", function () {
+      links.classList.remove("abierto");
+    });
   });
 }
 
